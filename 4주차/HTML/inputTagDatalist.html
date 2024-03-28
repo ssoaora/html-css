@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datalist</title>
+</head>
+<body>
+  <fieldset>
+    <legend>브라우저 선택</legend>
+    <form>
+      <h3>브라우저 선택</h3>
+      <input type="text" name="search" list="searchList">
+      <datalist id="searchList">
+        <option value="인터넷 익스플로러" label="IE"></option>
+        <option value="크롬" label="Chrome"></option>
+        <option value="파이어폭스" label="Firefox"></option>
+        <option value="사파리" label="Safari"></option>
+        <option value="오페라" label="Opera"></option>
+      </datalist>
+      <br>
+      <h3>이메일 입력</h3>
+      <input type="email" name="email" list="emailList" multiple size="40">
+      <datalist id="emailList">
+        <option value="chsu@naver.com" label="김철수"></option>
+        <option value="park@daum.net" label="박다은"></option>
+        <option value="lee@gmail.com" label="이구글"></option>
+        <option value="korea@hanmail.net" label="한국사람"></option>
+        <option value="net@nate.com" label="네티즌"></option>
+      </datalist>
+      <br> <br>
+      <div>
+        <button type="submit">제출</button>
+        <button type="reset">취소</button>
+      </div>
+    </form>
+  </fieldset>
+  <br>
+</body>
+</html>
