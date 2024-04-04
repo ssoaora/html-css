@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fontStyle</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+  html {
+  font-family: "IBM Plex Mono", "맑은 고딕", 굴림체, serif;
+  font-size: 20px;
+  }
+  div#cont1 { font-size: 30px; }
+  div#cont2 { font-size: 1.5rem; }
+  div#cont3 { font-size: 1.5em; }
+  </style>
+</head>
+
+<body>
+  <div>html에 적용된 글자크기 : 20px</div>
+  <div id="cont1">
+    <div id="cont2">1rem 적용 : 30px (20px * 1.5)</div>
+    <div id="cont3">1.5em 적용 : 45px (30px * 1.5)</div>
+  </div>
+</body>
+
+</html>
