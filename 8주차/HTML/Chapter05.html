@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 05</title>
+</head>
+
+<body>
+  <font size="5">
+    <a href="index.html">🏠Main Page</a>
+    <br>
+    <a href="Chapter05.html">5장</a>
+  </font>
+
+  <h1>5-01 폼 삽입하기</h1>
+  <hr>
+  <form>
+    <fieldset>
+      <legend>로그인</legend>
+
+      <!--레이블과 폼 요소가 인접한 경우-->
+      <label>아이디: <input type="text" name="ID" id="usr_id" maxlength="10" minlength="2" value="ssoaora"></label>
+
+      <!--레이블과 폼 요소가 인접하지 않은 경우-->
+      <label for="usr_pw">비밀번호:</label>
+      <input type="password" name="PW" id="usr_pw" maxlength="20" minlength="6" value="123456">
+
+      <input type="submit" value="로그인">
+    </fieldset>
+  </form>
+  <br>
+
+  <form>
+    <fieldset>
+      <legend>검색 상자, url, email, tel</legend>
+
+      <table>
+        <tr>
+          <td>
+            <label for="search_box">search:</label>
+          </td>
+          <td>
+            <input type="search" name="search" id="search_box" placeholder="검색어를 입력하세요" required>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="url_box">url:</label>
+          </td>
+          <td>
+            <input type="url" name="url" id="url_box" placeholder="http://www.example.com" required>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="email_box">email:</label>
+          </td>
+          <td>
+            <input type="email" name="email" id="email_box" placeholder="user@example.com">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="tel_box">tel:</label>
+          </td>
+          <td>
+            <input type="tel" name="tel" id="tel_box" placeholder="010-1234-5678" required>
+          </td>
+        </tr>
+      </table>
+      <br>
+
+      <input type="submit" value="저장">
+      <input type="reset" value="취소">
+    </fieldset>
+  </form>
+  <br>
+
+  <form>
+    <fieldset>
+      <legend>checkbox, radio, number, range</legend>
+      <p><b>주문할 상품을 선택해주세요.</b></p>
+      <label><input type="checkbox" name="product" id="check_1" value="1">상품1</label>
+      <input type="number" name="product1" min="1" max="5">개 (최대 5개)
+      <br>
+
+      <label><input type="checkbox" name="product" id="check_2" value="2">상품2</label>
+      <input type="number" name="product2" min="2" max="8" step="2">개 (최대 8개)
+      <br>
+
+      <label><input type="checkbox" name="product" id="check_3" value="3">상품3</label>
+      <input type="range" name="product3" min="1" max="10" value="3">개 (최대 10개)
+      <br>
+
+      <label><input type="checkbox" name="product" id="check_4" value="4">상품4</label>
+      <input type="range" name="product4" min="1" max="20">개 (최대 20개)
+      <br>
+
+      <p><b>포장 선택</b></p>
+      <label><input type="radio" name="radio_1" value="yes" checked>선물 포장</label>
+
+      <label><input type="radio" name="radio_1" value="no">포장 안함</label>
+      <br><br>
+
+      <input type="submit" value="주문하기">
+      <input type="reset" value="취소">
+    </fieldset>
+  </form>
+  <br>
+
+  <form>
+    <fieldset>
+      <legend>date, month, week, time, datetime</legend>
+      <input type="date" min="1980-01-01" max="2030-12-31" value="2002-07-11">
+      <br><br>
+
+      <input type="month" min="1980-01" max="2030-12" value="2002-07">
+      <br><br>
+
+      <input type="week" min="1980-W01" max="2030-W52" value="2002-W28">
+    </fieldset>
+  </form>
+  <br>
+
+  <form>
+    <fieldset>
+      <legend>time, datetime</legend>
+      <input type="time" min="00:00" max="23:59" value="12:00">
+      <br><br>
+
+      <input type="datetime-local" min="1980-01-01T00:00" max="2030-12-31T23:59" value="2002-07-11T12:00">
+    </fieldset>
+  </form>
+</body>
+
+</html>

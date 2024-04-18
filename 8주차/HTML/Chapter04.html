@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<body lang="ko">
 
 <head>
   <meta charset="UTF-8">
@@ -14,6 +14,12 @@
 </head>
 
 <body link="green" vlink="orange" alink="red">
+  <font size="5">
+    <a href="index.html">🏠Main Page</a>
+    <br>
+    <a href="Chapter04.html" id="top">4장</a>
+  </font>
+
   <h1>4-01 텍스트 입력하기</h1>
   <hr>
   <p>
@@ -267,50 +273,87 @@
   규뉴듀류뮤뷰슈유쥬츄큐튜퓨휴
   그느드르므브스으즈츠크트프흐
   기니디리미비시이지치키티피히
-</body>
 
-<br><br><br>
+  <br><br><br>
 
-<h1>4-05 오디오와 비디오 삽입하기</h1>
-<hr>
+  <h1>4-05 오디오와 비디오 삽입하기</h1>
+  <hr>
 
-<h2>object 태그</h2>
-<hr>
-<font size="5">
-  <p><b>Audio</b></p>
-</font>
-<object data="assets/BTS.mp3"></object>
+  <h2>object 태그</h2>
+  <hr>
+  <font size="5">
+    <p><b>Audio</b></p>
+  </font>
+  <object data="assets/BTS.mp3"></object>
 
-<font size="5">
-  <p><b>PDF</b></p>
-</font>
-<object width="300" height="300" data="assets/book.pdf"></object>
+  <font size="5">
+    <p><b>PDF</b></p>
+  </font>
+  <object width="300" height="300" data="assets/book.pdf"></object>
 
-<h2>embed 태그</h2>
-<hr>
-<embed src="assets/BTS.mp3">
+  <h2>embed 태그</h2>
+  <hr>
+  <embed src="assets/BTS.mp3">
 
-<h2>audio 태그</h2>
-<hr>
-<audio src="assets/BTS.mp3" autoplay controls loop></audio>
+  <h2>audio 태그</h2>
+  <hr>
+  <audio src="assets/BTS.mp3" autoplay controls loop></audio>
 
-<h2>video 태그</h2>
-<hr>
-<video src="https://file-examples.com/storage/fef545ae0b661d470abe676/2017/04/file_example_MP4_1280_10MG.mp4" controls width="300"></video>
+  <h2>video 태그</h2>
+  <hr>
+  <video src="https://file-examples.com/storage/fef545ae0b661d470abe676/2017/04/file_example_MP4_1280_10MG.mp4" controls
+    width="300"></video>
 
-<h2>source 태그</h2>
-<hr>
-<video controls width="300">
-  <source src="https://file-examples.com/storage/fef545ae0b661d470abe676/2017/04/file_example_MP4_1280_10MG.mp4" type="video/mp4">
-  <source src="https://file-examples.com/storage/fef545ae0b661d470abe676/2020/03/file_example_WEBM_1280_3_6MB.webm" type="video/webm">
-</video>
+  <h2>source 태그</h2>
+  <hr>
+  <video controls width="300">
+    <source src="https://file-examples.com/storage/fef545ae0b661d470abe676/2017/04/file_example_MP4_1280_10MG.mp4"
+      type="video/mp4">
+    <source src="https://file-examples.com/storage/fef545ae0b661d470abe676/2020/03/file_example_WEBM_1280_3_6MB.webm"
+      type="video/webm">
+    </video>
 
-<br><br><br>
+  <br><br><br>
 
-<h1>4-06 하이퍼링크 삽입하기</h1>
-<hr>
-<p>
-  <a href="https://www.w3schools.com/html/">w3schools</a>
-</p>
-
+  <h1>4-06 하이퍼링크 삽입하기</h1>
+  <hr>
+  <p>
+    <a href="https://www.w3schools.com/html/">w3schools</a>
+  </p>
+  <p>
+    <a href="https://www.w3schools.com/" target="_blank">w3schools_blank</a>
+  </p>
+  <p>
+    <a href="https://www.naver.com/" target="search">NAVER:search</a>
+  </p>
+  <p>
+    <a href="https://www.daum.net/" target="search">DAUM:search</a>
+  </p>
+  
+  <h2>앵커 만들기</h2>
+  <hr>
+  <ul id="menu">
+    <li><a href="#content1">Content #1</a></li>
+    <li><a href="#content2">Content #2</a></li>
+  </ul>
+  
+  <h2 id="content1">Content #1</h2>
+  <p>Content #1 내용입니다.</p>
+  <a href="#menu">메뉴로 돌아가기</a>
+  <br><br><br><br>
+  
+  <h2 id="content2">Content #2</h2>
+  <p>Content #2 내용입니다.</p>
+  <a href="#menu">메뉴로 돌아가기</a>
+  
+  <p><a href="#top">Top</a></p>
+  
+  <h2>이미지 맵</h2>
+  <hr>
+  <img src="assets/earth.jpg" usemap="#planetmap" border="0" width="300" height="300">
+  <map name="planetmap">
+    <area shape="circle" coords="150, 150, 50" href="naver.com" target="_blank">
+  </map>
+  
+  </body>
 </html>
