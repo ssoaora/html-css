@@ -5,6 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chapter 05</title>
+  <style>
+    div {
+      margin-top: 10px;
+      justify-content: space-around;
+    }
+  
+    div>button {
+      text-align: center;
+      width: 150px;
+      height: 40px;
+      background-color: #fafafa;
+      border: 1px solid #ccc;
+      box-shadow: 1px 1px 1px #ccc;
+    }
+  
+    div>button:first-of-type {
+      background-color: #435fff;
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
@@ -14,7 +34,10 @@
     <a href="Chapter05.html">5장</a>
   </font>
 
-  <h1>5-01 폼 삽입하기</h1>
+  <h1>
+    5-01 폼 삽입하기<br>
+    5-02 사용자 입력을 위한 input 태그
+  </h1>
   <hr>
   <form>
     <fieldset>
@@ -134,6 +157,86 @@
       <br><br>
 
       <input type="datetime-local" min="1980-01-01T00:00" max="2030-12-31T23:59" value="2002-07-11T12:00">
+    </fieldset>
+  </form>
+  <br>
+  
+  <form>
+    <fieldset>
+      <legend>submit, reset, button, image</legend>
+      <input type="text" name="usr_name" placeholder="무엇이나 입력하세요" required>
+      <br><br>
+  
+      <input type="submit" value="전송">
+      <input type="reset" value="취소">
+      <button type="button" onclick="alert('버튼을 눌렀습니다.')">버튼</button>
+      <br><br>
+  
+      <input type="image" src="assets/login.png" alt="로그인" width="150">
+    </fieldset>
+  </form>
+  
+  <form>
+    <fieldset>
+      <legend>file, hidden, image</legend>
+      <input type="file" name="user_file">
+      <br><br>
+  
+      <input type="color" name="user_color" value="#ff0000">
+    </fieldset>
+  </form>
+  
+  <h1>5-03 input 태그의 주요 속성</h1>
+  <hr>
+  <form>
+    <fieldset>
+      <legend>pattern</legend>
+      <label>전화번호: <input type="text" name="phone" placeholder="0XX-XXXX-XXXX" pattern="^0\d{1,2}-\d{3,4}-\d{4}"></label>
+      <input type="submit" value="저장">
+    </fieldset>
+  </form>
+  <br>
+  
+  <h1>5-04 폼에서 사용하는 여러가지 태그</h1>
+  <hr>
+  <form>
+    <fieldset>
+      <legend>textarea, select, option, datalist</legend>
+      <textarea rows="10" cols="50" wrap="on"></textarea>
+      <br>
+  
+      <select name="fruit">
+        <optgroup label="선물용">
+          <option value="apple" selected>사과</option>
+          <option value="banana">바나나</option>
+        </optgroup>
+        <optgroup label="가정용">
+          <option value="cherry">체리</option>
+          <option value="grape">포도</option>
+        </optgroup>
+      </select>
+      <br>
+  
+      <input type="text" list="product_list">
+      <datalist id="product_list">
+        <option value="PS5" label="Playstation 5"></option>
+        <option value="Xbox" label="Xbox Series X"></option>
+        <option value="Nintendo" label="Nintendo Switch"></option>
+      </datalist>
+      <br>
+  
+      <input type="email" name="mailing" list="mail_list" multiple>
+      <datalist id="mail_list">
+        <option value="abc@test.com" label="홍길동"></option>
+        <option value="def@news.com" label="김철수"></option>
+        <option value="ghi@hmm.kr" label="이영희"></option>
+        <option value="jkl@site.com" label="박철민"></option>
+      </datalist>
+      <br><br>
+  
+      <div>
+        <button type="submit">로그인</button>
+      </div>
     </fieldset>
   </form>
 </body>
