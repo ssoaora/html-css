@@ -1,0 +1,19 @@
+@media (prefers-color-scheme: light) {
+  .themed {
+    background: white;
+    color: black;
+  }
+  .themed a {
+    color: blue; /* 변경할 하이퍼링크 색상 */
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .themed {
+    background: #3C3C3C;
+    color: white;
+  }
+  .themed a {
+    color: yellow; /* 변경할 하이퍼링크 색상 */
+  }
+}

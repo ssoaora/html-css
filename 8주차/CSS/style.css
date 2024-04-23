@@ -1,0 +1,33 @@
+h1, h2 {
+  font-family: D2Coding;
+  margin-bottom: 0px;
+}
+
+a {
+  text-decoration-style: wavy;
+}
+
+#italic {
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.code {
+  font-family: "IBM Plex Mono", D2Coding;
+  font-size: 15px;
+  padding: 5px;
+  width: min-content;
+  color: deeppink;
+  background-color: gainsboro;
+  border-radius: 5px;
+}
+
+div {
+  width: 200px; height: 100px;
+  margin: 25px;
+  border: 1px solid blue;
+}
+
+.box-shadow {
+  box-shadow: 2px 2px 100px 0px grey;
+}
