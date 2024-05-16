@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transition-duration example</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #07f;
+      border: 1px solid #222;
+      border-radius: 0%;
+      transition-property: width, height, border-radius;
+      transition-duration: 10s;
+    }
+
+    .box:hover {
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+</body>
+
+</html>
