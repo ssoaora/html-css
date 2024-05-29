@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid-template-columns</title>
+  <style>
+    #wrapper {
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+      grid-template-rows: 100px 100px;
+    }
+
+    .items {
+      padding: 10px;
+      background-color: #eee;
+      border: 1px solid gray;
+    }
+
+    .items:nth-child(odd) {
+      background-color: #bbb;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div class="items">Lorem ipsum dolor sit, amet consectetur adipisicing elit. amet consectetur adipisicing elit.
+    </div>
+    <div class="items">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+    <div class="items">Lorem ipsum dolor sit</div>
+    <div class="items">Lorem ipsum dolor</div>
+    <div class="items">Lorem ipsum</div>
+</body>
+
+</html>
