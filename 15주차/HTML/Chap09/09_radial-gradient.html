@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>원형 그라데이션</title>
+  <style>
+    div {
+      width: 300px;
+      height: 200px;
+      margin: 20px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .radial1 {
+      background: radial-gradient(circle, white, yellow, red);
+    }
+
+    .radial2 {
+      background: radial-gradient(ellipse, white, yellow, red);
+    }
+  </style>
+</head>
+<body>
+  <div class="radial1">(<b>circle</b>, white, yellow, red);</div>
+  <div class="radial2">(<b>ellipse</b>, white, yellow, red);</div>
+</body>
+</html>

@@ -6,9 +6,10 @@
   <title>선형 그라데이션</title>
   <style>
     div {
-      width: 200px;
+      width: 300px;
       height: 150px;
       margin: 30px;
+      padding: 10px;
       border-radius: 10px;
     }
 
@@ -19,10 +20,20 @@
     .linear2 {
       background: linear-gradient(45deg, #f00, #fff);
     }
+
+    .linear3 {
+      background: linear-gradient(45deg, #f00, #fff, #00f);
+    }
+
+    .linear4 {
+      background: linear-gradient(to bottom, #00f, #fff 30%, #00f);
+    }
   </style>
 </head>
 <body>
-  <div class="linear1"></div>
-  <div class="linear2"></div>
+  <div class="linear1">(to right bottom, blue, white);</div>
+  <div class="linear2">(45deg, #f00, #fff);</div>
+  <div class="linear3">(45deg, #f00, #fff, #00f);</div>
+  <div class="linear4">(to bottom, #00f, #fff 30%, #00f);</div>
 </body>
 </html>
