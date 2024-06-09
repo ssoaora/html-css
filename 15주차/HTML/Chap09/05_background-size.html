@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배경 이미지 크기</title>
+  <style>
+    .box {
+      border: 3px solid #222;
+      width: 300px;
+      height: 300px;
+      margin: 20px;
+      background: url('../../../HTML Sources/images/bg4.jpg') no-repeat left top;
+      color: white;
+    }
+
+    #auto {
+      background-size: auto;
+    }
+
+    #px {
+      background-size: 200px;
+    }
+
+    #percent {
+      background-size: 50%;
+    }
+
+    #percent2 {
+      background-size: 100% 100%;
+    }
+
+    #contain {
+      background-size: contain;
+    }
+
+    #cover {
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="box" id="auto">auto</div>
+  <div class="box" id="px">200px</div>
+  <div class="box" id="percent">50%</div>
+  <div class="box" id="percent2">100% 100%</div>
+  <div class="box" id="contain">contain</div>
+  <div class="box" id="cover">cover</div>
+</body>
+</html>
