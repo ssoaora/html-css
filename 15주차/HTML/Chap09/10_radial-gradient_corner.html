@@ -4,8 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>원형 그라데이션의 크기</title>
+  <style>
+    div {
+      width: 200px;
+      height: 150px;
+      margin: 5px;
+    }
+
+    #radial1 {
+      background: radial-gradient(circle closest-side at 30% 40%, white, yellow, green);
+    }
+
+    #radial2 {
+      background: radial-gradient(circle closest-corner at 30% 40%, white, yellow, green);
+    }
+
+    #radial3 {
+      background: radial-gradient(circle farthest-side at 30% 40%, white, yellow, green);
+    }
+
+    #radial4 {
+      background: radial-gradient(circle farthest-corner at 30% 40%, white, yellow, green);
+    }
+  </style>
 </head>
 <body>
-  
+  <div id="radial1">closest-side</div>
+  <div id="radial2">closest-corner</div>
+  <div id="radial3">farthest-side</div>
+  <div id="radial4">farthest-corner</div>
 </body>
 </html>
