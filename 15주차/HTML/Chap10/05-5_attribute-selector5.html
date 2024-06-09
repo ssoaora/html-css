@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[속성 |= 값] 선택자</title>
+  <title>[속성 ^= 값] 선택자</title>
   <style>
     ul {
       list-style: none;
@@ -21,24 +21,24 @@
       text-decoration: none;
     }
 
-    a[title |= "us"] {
+    a[title ^= "eng"] {
       background: url('../../../HTML Sources/images/us.png') no-repeat left center;
     }
 
-    a[title |= "jap"] {
+    a[title ^= "jap"] {
       background: url('../../../HTML Sources/images/jp.png') no-repeat left center;
     }
 
-    a[title |= "chn"] {
+    a[title ^= "chin"] {
       background: url('../../../HTML Sources/images/ch.png') no-repeat left center;
     }
   </style>
 </head>
 <body>
   <ul>
-    <li><a href="#" title="us-english">영어</a></li>
-    <li><a href="#" title="ja">일본어</a></li>
-    <li><a href="#" title="chn">중국어</a></li>
+    <li><a href="#" title="english">영어</a></li>
+    <li><a href="#" title="japanese">일본어</a></li>
+    <li><a href="#" title="chinese">중국어</a></li>
   </ul>
 </body>
 </html>
