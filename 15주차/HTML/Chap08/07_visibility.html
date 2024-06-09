@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>visibility 개념</title>
+  <style>
+    img {
+      width: 100px;
+    }
+
+    img#one {
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+  <h1>visibility: hidden</h1>
+  <img src="../../../HTML Sources/images/bear.jpg">
+  <img id="one" src="../../../HTML Sources/images/bg.jpg">
+  <img src="../../../HTML Sources/images/cat.jpg">
+  <hr>
+
+  <h1>display: none</h1>
+  <img src="../../../HTML Sources/images/bear.jpg">
+  <img style="display: none;" src="../../../HTML Sources/images/bg.jpg">
+  <img src="../../../HTML Sources/images/cat.jpg">
+</body>
+</html>

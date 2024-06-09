@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position 속성 살펴보기</title>
+  <style>
+    .box1 {
+      float: left;
+      width: 100px;
+      background-color: #ffd800;
+      margin-right: 10px;
+      padding: 20px;
+    }
+
+    .box2 {
+      position: static;
+      left: -50px;
+      top: 30px;
+      width: 300px;
+      background-color: #0094ff;
+      float: left;
+      padding: 20px;
+    }
+
+    .box3 {
+      float: left;
+      width: 100px;
+      background-color: #ffd800;
+      margin-right: 10px;
+      padding: 20px;
+    }
+
+    .box4 {
+      position: relative;
+      left: -50px;
+      top: 30px;
+      width: 300px;
+      background-color: #0094ff;
+      float: left;
+      padding: 20px;
+    }
+
+    #wrap {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      border: 1px solid #000;
+    }
+
+    .box {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border: 1px solid #000;
+    }
+
+    #crd1 {
+      top: 0;
+      left: 0;
+      background-color: black;
+      color: white;
+    }
+
+    #crd2 {
+      top: 0;
+      right: 0;
+      background-color: white;
+    }
+
+    #crd3 {
+      bottom: 0;
+      left: 0;
+      background-color: red;
+      color: white;
+    }
+
+    #crd4 {
+      bottom: 0;
+      right: 0;
+      background-color: green;
+      color: white;
+    }
+
+    #crd5 {
+      top: 80px;
+      left: 80px;
+      background-color: blue;
+      color: white;
+    }
+
+    #crd6 {
+      bottom: 40px;
+      right: 100px;
+      background-color: aquamarine;
+    }
+
+    #fixed {
+      position: fixed;
+      top: 5px;
+      right: 5px;
+      width: 50px;
+      height: 50px;
+      background-color: orange;
+    }
+
+    #content {
+      border: 5px solid red;
+      width: 400px;
+      height: 2000px;
+    }
+  </style>
+</head>
+<body>
+  <h1>static</h1>
+  <div class="box1">box1</div>
+  <div class="box2">box2</div>
+  <hr style="clear: both;">
+
+  <h1>relative</h1>
+  <div class="box3">box3</div>
+  <div class="box4">box4</div>
+  <hr style="clear: both;">
+
+  <h1>absolute</h1>
+  <div id="wrap">
+    <div id="crd1" class="box">crd1</div>
+    <div id="crd2" class="box">crd2</div>
+    <div id="crd3" class="box">crd3</div>
+    <div id="crd4" class="box">crd4</div>
+    <div id="crd5" class="box">crd5</div>
+    <div id="crd6" class="box">crd6</div>
+  </div>
+  <hr style="clear: both;">
+
+  <h1>fixed</h1>
+  <div id="fixed">fixed</div>
+  <div id="content">content</div>
+</body>
+</html>
