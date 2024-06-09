@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연결 선택자 - 자식 선택자</title>
+  <style>
+    body {
+      background-color: #eee;
+    }
+
+    section {
+      width: 600px;
+      margin: 20px auto;
+    }
+
+    p {
+      width: 400px;
+      padding: 10px;
+      line-height: 2;
+      background-color: #fff;
+      border: 1px solid #ccc;
+    }
+
+    section > p {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>자식 선택자</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione nesciunt deleniti repellendus eos sapiente et veritatis illum ipsam modi. Officiis adipisci tempora dolorem magni necessitatibus eveniet? Voluptates dolorum maxime vero!</p>
+    <div>
+      <p>div 아래 p 태그1</p>
+      <p>div 아래 p 태그2</p>
+    </div>
+    <img src="assets/child.png" width="400px">
+  </section>
+</body>
+</html>
