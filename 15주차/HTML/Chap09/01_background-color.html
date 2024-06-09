@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배경의 적용 범위 지정</title>
+  <style>
+    .clip1 {
+      border: 20px dashed #222;
+      background-color: #ffd9a0;
+      width: 350px;
+      padding: 20px;
+      margin-right: 20px;
+      float: left;
+      background-clip: border-box;
+    }
+
+    .clip2 {
+      border: 20px dashed #222;
+      background-color: #ffd9a0;
+      width: 350px;
+      padding: 20px;
+      margin-right: 20px;
+      float: left;
+      background-clip: padding-box;
+    }
+
+    .clip3 {
+      border: 20px dashed #222;
+      background-color: #ffd9a0;
+      width: 350px;
+      padding: 20px;
+      margin-right: 20px;
+      float: left;
+      background-clip: content-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="clip1">
+    <h1>background-clip: border-box;</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia praesentium, architecto non id nihil eligendi sit officiis exercitationem aliquam magnam dolorem voluptatum quia dicta ab pariatur sapiente repellendus dolores temporibus.
+    </p>
+  </div>
+
+  <div class="clip2">
+    <h1>background-clip: padding-box;</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia praesentium, architecto non id nihil eligendi sit officiis exercitationem aliquam magnam dolorem voluptatum quia dicta ab pariatur sapiente repellendus dolores temporibus.
+    </p>
+  </div>
+
+  <div class="clip3">
+    <h1>background-clip: content-box;</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia praesentium, architecto non id nihil eligendi sit officiis exercitationem aliquam magnam dolorem voluptatum quia dicta ab pariatur sapiente repellendus dolores temporibus.
+    </p>
+  </div>
+</body>
+</html>
