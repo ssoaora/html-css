@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배경 이미지 적용 범위</title>
+  <style>
+    div {
+      width: 400px;
+      height: 250px;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 20px solid rgba(204, 204, 204, 0.493);
+      background-image: url('../../../HTML Sources/images/bg3.png');
+      background-repeat: no-repeat;
+      background-position: right top;
+    }
+
+    #border-box {
+      background-origin: border-box;
+    }
+
+    #padding-box {
+      background-origin: padding-box;
+    }
+
+    #content-box {
+      background-origin: content-box;
+      background-color: bisque;
+      background-clip: content-box;
+    }
+  </style>
+</head>
+<body>
+  <div id="border-box">
+    <h2>border-box</h2>
+    <h3>-바쁜 학생을 위한 빠른 학습법</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, aperiam in deserunt unde esse minima et, quo exercitationem obcaecati maiores delectus labore laboriosam sint voluptas velit cupiditate nulla nostrum quos.</p>
+  </div>
+
+  <div id="padding-box">
+    <h2>padding-box</h2>
+    <h3>-바쁜 학생을 위한 빠른 학습법</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, aperiam in deserunt unde esse minima et, quo exercitationem obcaecati maiores delectus labore laboriosam sint voluptas velit cupiditate nulla nostrum quos.</p>
+  </div>
+
+  <div id="content-box">
+    <h2>content-box</h2>
+    <h3>-바쁜 학생을 위한 빠른 학습법</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, aperiam in deserunt unde esse minima et, quo exercitationem obcaecati maiores delectus labore laboriosam sint voluptas velit cupiditate nulla nostrum quos.</p>
+  </div>
+</body>
+</html>
