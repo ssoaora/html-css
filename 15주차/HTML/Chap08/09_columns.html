@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>다단 편집</title>
+  <style>
+    #col1 {
+      column-count: 2;
+    }
+
+    #col2 {
+      column-width: 100px;
+    }
+
+    #col3 {
+      width: 400px;
+      padding: 10px;
+      border: 1px solid black;
+      column-count: 2;
+      column-gap: 40px;
+      column-rule: dashed red 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>column-count: 2;</h1>
+  <div id="col1">
+    <b>코코넛 오일</b><br>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quo repudiandae sapiente consequuntur expedita asperiores aliquid ad odio ducimus. Eos iusto repudiandae doloremque minima illum! Ab sapiente quis obcaecati aliquid?
+  </div>
+  <hr>
+
+  <h1>column-width: 100px;</h1>
+  <div id="col2">
+    <b>코코넛 오일</b>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fuga suscipit labore neque quia dignissimos reiciendis quod dolor, quasi impedit nam iusto quas. Id temporibus nihil odio suscipit velit facilis.
+  </div>
+  <hr>
+
+  <h1>기타 속성</h1>
+  <div id="col3">
+    <b>코코넛 오일</b>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus perspiciatis molestias esse deleniti dicta delectus, aliquam nisi molestiae laudantium laborum culpa optio dolores placeat dolorem voluptate consectetur assumenda. Esse, eveniet!
+  </div>
+</body>
+</html>
