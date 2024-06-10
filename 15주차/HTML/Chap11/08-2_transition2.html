@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transition 속성 2</title>
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 52px;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      margin: 200px auto;
+      text-align: center;
+      background-color: red;
+      border: 1px solid black;
+      transition-property: background-color, transform, width, height;
+      transition-duration: 2s, 3s;
+    }
+
+    .box:hover {
+      width: 400px;
+      height: 200px;
+      background-color: coral;
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="box"><h1>HELLO</h1></div>
+</body>
+</html>
