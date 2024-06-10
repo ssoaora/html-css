@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>구조 가상 클래스</title>
+  <style>
+    div p:first-child {
+      background-color: red;
+    }
+
+    div p:first-of-type {
+      background-color: blue;
+    }
+
+    div p:last-child {
+      background-color: green;
+    }
+
+    div p:last-of-type {
+      background-color: yellow;
+    }
+
+    :only-child {
+      color: aqua;
+    }
+
+    p:only-of-type {
+      color: orange;
+    }
+
+    div p:nth-child(4) {
+      color: white;
+      background-color: black;
+    }
+
+    div p:nth-last-child(3) {
+      color: white;
+      background-color: darkslateblue;
+    }
+
+    div p:nth-of-type(2) {
+      background-color: deeppink;
+    }
+
+    div p:nth-last-of-type(2) {
+      background-color: cadetblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div>a</div>
+    <p>b</p>
+    <p>c</p>
+    <p>d</p>
+    <p>e</p>
+    <p>f</p>
+    <div>g</div>
+    <div>h</div>
+  </div>
+
+  <hr>
+
+  <div>
+    <p>a</p>
+  </div>
+  <div>
+    <p>A</p>
+  </div>
+</body>
+
+</html>
