@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>perspective 속성</title>
+  <title>perspective-origin 속성</title>
   <style>
     .origin {
       width: 152px;
@@ -13,31 +13,17 @@
       float: left;
     }
 
-    .origin > div {
-      width: 152px;
-      height: 180px;
-    }
-
     .rotatex:hover {
       transform: rotateX(50deg);
     }
 
     #pers {
       perspective: 300px;
+      perspective-origin: 0% 30%;
     }
   </style>
 </head>
 <body>
-  <div class="origin">
-    <img src="../../../HTML Sources/images/sunset.jpg" title="원본 이미지">
-  </div>
-
-  <div class="origin">
-    <div class="rotatex">
-      <img src="../../../HTML Sources/images/sunset.jpg">
-    </div>
-  </div>
-
   <div class="origin" id="pers">
     <div class="rotatex">
       <img src="../../../HTML Sources/images/sunset.jpg">
