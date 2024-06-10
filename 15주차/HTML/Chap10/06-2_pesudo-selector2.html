@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>요소 상태에 따른 가상 클래스 선택자</title>
+  <link rel="stylesheet" href="../../CSS/10-3.css">
+  <style>
+    .contents {
+      margin: 10px auto;
+      width: 500px;
+      padding: 10px;
+      border: 1px solid #222;
+      border-radius: 5px;
+    }
+
+    #intro:target {
+      background-color: #0069e0;
+      color: #fff;
+    }
+
+    #room:target {
+      background-color: #ff9844;
+    }
+
+    #reservation:target {
+      background-color: #fff8dc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="navi">
+      <ul>
+        <li><a href="#intro">이용 안내</a></li>
+        <li><a href="#room">객실 소개</a></li>
+        <li><a href="#reservation">예약 방법 및 요금</a></li>
+        <li><a href="ps-2.html">예약하기</a></li>
+      </ul>
+    </nav>
+    <div id="intro" class="contents">
+      <h2>이용 안내</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus unde id minima velit molestiae, aliquid labore veritatis veniam suscipit possimus quibusdam repudiandae nobis ipsam recusandae consequatur quaerat placeat quasi cumque!</p>
+    </div>
+    <div id="room" class="contents">
+      <h2>객실 소개</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus unde id minima velit molestiae, aliquid labore veritatis veniam suscipit possimus quibusdam repudiandae nobis ipsam recusandae consequatur quaerat placeat quasi cumque!</p>
+    </div>
+    <div id="reservation" class="contents">
+      <h2>예약 방법 및 요금 </h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus unde id minima velit molestiae, aliquid labore veritatis veniam suscipit possimus quibusdam repudiandae nobis ipsam recusandae consequatur quaerat placeat quasi cumque!</p>
+    </div>
+  </div>
+</body>
+</html>
