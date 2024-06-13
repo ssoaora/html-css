@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function check(form) {
+      const grade_len = form.grade.length;
+
+      for (let i = 0; i < grade_len; i++) {
+        if (form.grade[i].checked == true) {
+          break;
+        }
+        if (i == grade_len - 1) {
+          alert('항목을 선택하지 않았습니다.');
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <form name="myform">
+    <b>당신의 학년은 몇 학년 입니까?</b><br><br>
+    <input type="radio" name="grade" value="1학년">1학년<br>
+    <input type="radio" name="grade" value="2학년">2학년<br>
+    <input type="radio" name="grade" value="3학년">3학년<br>
+    <input type="radio" name="grade" value="4학년">4학년<br><br>
+    <input type="button" value="확인" onclick="javascript:check(this.form)">
+  </form>
+</body>
+
+</html>
