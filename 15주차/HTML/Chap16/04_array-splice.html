@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배열 요소의 추출, 삽입</title>
+  <script>
+    let arr1 = [10, 20, 30, 40 ,50];
+
+    document.write("원래 배열 : ", arr1, "<br><br>");
+
+    let data1 = arr1.splice(2, 0, "a");
+    document.write("변경된 배열 : ", arr1, "<br>");
+
+    let data2 = arr1.splice(2, 2, "b");
+    document.write("변경된 배열 : ", arr1, "<br>");
+    document.write("반환값 : ", data2, "<br><br>");
+
+    let data3 = arr1.splice(2, 1);
+    document.write("변경된 배열 : ", arr1, "<br>");
+    document.write("반환값 : ", data3, "<br><br>");
+
+    let data4 = arr1.splice(2);
+    document.write("변경된 배열 : ", arr1, "<br>");
+    document.write("반환값 : ", data4, "<br><br>");
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
