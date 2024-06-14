@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>argument 매개 변수</title>
+  <script>
+    function sum() {
+      let sum = 0;
+
+      document.write("매개변수의 수 : ", arguments.length, "<br>");
+
+      for (let i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+      }
+      document.write("합계 : ", sum);
+    }
+
+    sum(10, 20, 30)
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

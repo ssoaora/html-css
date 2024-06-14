@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>화살표 함수</title>
+  <script>
+    // 매개변수가 없는 경우
+    const result1 = () => { document.write("안녕하세요?<br>") };
+    result1();
+
+    // 매개변수가 하나인 경우
+    const result2 = (user) => { document.write(user, "님. 안녕하세요?<br>") };
+    result2("홍길동");
+
+    // 매개변수가 두 개인 경우
+    let result3 = (num1, num2) => { return num1 + num2 };
+    document.write(result3(10, 20), "<br>");
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM을 이용한 이벤트 처리 방법 3</title>
+  <link rel="stylesheet" href="../../CSS/15-07.css">
+</head>
+<body>
+  <div id="item">
+    <img src="../../../HTML Sources/images/flower.jpg" alt="">
+    <button class="over" id="open" onclick="showDetail()">상세 설명 보기</button>
+    <div id="desc" class="detail">
+      <h4>등심붓꽃</h4>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, nostrum veritatis. Temporibus quam vel voluptas inventore, cupiditate aspernatur saepe exercitationem odit consequatur ipsa fugiat numquam ratione deserunt adipisci aperiam sit!</p>
+      <button id="close" onclick="hideDetail()">상세 설명 닫기</button>
+    </div>
+  </div>
+
+  <script>
+    function showDetail() {
+      document.querySelector("#desc").style.display = "block";
+      document.querySelector("#open").style.display = "none";
+    }
+
+    function hideDetail() {
+      document.querySelector("#desc").style.display = "none";
+      document.querySelector("#open").style.display = "block";
+    }
+  </script>
+</body>
+</html>

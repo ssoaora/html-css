@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM을 이용한 이벤트 처리 방법 2</title>
+  <link rel="stylesheet" href="../../CSS/15-06.css">
+  <style>
+    @keyframes rainbow {
+      from {
+        background-color: black;
+      }
+
+      10% {
+        background-color: red;
+      }
+
+      20% {
+        background-color: orange;
+      }
+
+      30% {
+        background-color: yellow;
+      }
+
+      40% {
+        background-color: yellowgreen;
+      }
+
+      50% {
+        background-color: green;
+      }
+
+      60% {
+        background-color: dodgerblue;
+      }
+
+      70% {
+        background-color: blue;
+      }
+
+      80% {
+        background-color: blueviolet;
+      }
+
+      to {
+        background-color: purple;
+      }
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#" onclick="changeBg('green')">Green</a></li>
+    <li><a href="#" onclick="changeBg('purple')">Purple</a></li>
+    <li><a href="#" onclick="rainbow()">Rainbow</a></li>
+  </ul>
+  <div id="result"></div>
+
+  <script>
+    function changeBg(color) {
+      var result = document.querySelector('#result');
+      result.style.backgroundColor = color;
+    }
+
+    function rainbow() {
+      var result = document.querySelector('#result');
+      result.style.animation = "rainbow 3s infinite";
+    }
+  </script>
+</body>
+</html>

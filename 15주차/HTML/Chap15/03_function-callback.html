@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>함수를 다른 함수의 매개변수에 전달</title>
+  <script>
+    function callTenTimes(myFunc) {
+      for (let i = 0; i < 10; i++) {
+        document.write(i, " : ");
+        myFunc();
+      }
+    }
+
+    function callback() {
+      document.write("함수 호출<br>");
+    }
+
+    callTenTimes(callback);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

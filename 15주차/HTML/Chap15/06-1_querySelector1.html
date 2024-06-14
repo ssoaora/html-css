@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM을 이용한 이벤트 처리 방법 1</title>
+  <style>
+    @keyframes rainbow {
+      from {
+        color: black;
+      }
+
+      10% {
+        color: red;
+      }
+
+      20% {
+        color: orange;
+      }
+
+      30% {
+        color: yellow;
+      }
+
+      40% {
+        color: yellowgreen;
+      }
+
+      50% {
+        color: green;
+      }
+
+      60% {
+        color: dodgerblue;
+      }
+
+      70% {
+        color: blue;
+      }
+
+      80% {
+        color: blueviolet;
+      }
+
+      to {
+        color: purple;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button id="change">CHANGE</button>
+  <h2>정신 나갈거 같애</h2>
+
+  <script>
+    let changeBtn = document.querySelector("#change");
+    changeBtn.onclick = changeColor;
+
+    function changeColor() {
+      document.querySelector("h2").style.animation = "rainbow 1s infinite";
+    }
+  </script>
+</body>
+</html>
