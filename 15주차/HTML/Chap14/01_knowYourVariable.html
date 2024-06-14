@@ -3,7 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>변수 알아보기</title>
+  <script>
+    let today = new Date();
+    let currentYear = today.getFullYear();
+
+    let birthYear = prompt("아쎄이! 새롭게 태어난 년도를 대라!");
+    let age = currentYear - birthYear + 1;
+
+    document.write("올해는 " + currentYear + "년 이다! <br>");
+    document.write(birthYear + "년에 태어난 해병의 나이는 " + age + "세 이다.");
+  </script>
 </head>
 <body>
   
