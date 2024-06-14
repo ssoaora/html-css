@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>if문과 논리 연산자의 사용</title>
+  <script>
+    const name = prompt("당신의 이름은?");
+    const height = prompt("당신의 키는?");
+    const weight = prompt("당신의 몸무게는?");
+
+    const normal = (height - 100) * 0.9;
+
+    let result = weight >= normal - 2 && weight <= normal + 2;
+    const message = result ? "적정 체중입니다." : "적정 체중이 아닙니다.";
+
+    document.write(`${name}님 체중의 기준은 ${normal}이고, ${message}`);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

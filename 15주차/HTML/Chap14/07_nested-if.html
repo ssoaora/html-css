@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이중 if문</title>
+  <script>
+    const id = "dongmin";
+    const password = "qwertyuiop";
+    const user_id = prompt("Enter your ID:");
+    const user_pw = prompt("Enter your Password:");
+
+    if (id == user_id) {
+      if (password == user_pw) {
+        document.write(`${id}님 반갑습니다!`);
+      }
+      else {
+        alert("비밀번호가 일치하지 않습니다.");
+        location.reload();
+      }
+    }
+    else {
+      alert("아이디가 일치하지 않습니다.");
+      location.reload();
+    }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
