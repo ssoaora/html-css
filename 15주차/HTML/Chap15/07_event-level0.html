@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Level0 이벤트 지정 방식</title>
+  <script>
+    const color = ["white", "yellow", "aqua", "purple"];
+    let i = 0;
+
+    window.onload = function() {
+      const btn = document.querySelector("#btn1");
+      btn.onclick = function() {
+        colorBg();
+      }
+    }
+
+    function colorBg() {
+      i++;
+
+      if (i >= color.length) {
+        i = 0;
+      }
+      
+      const bodyTag = document.querySelector("body");
+      bodyTag.style.backgroundColor = color[i];
+    }
+  </script>
+</head>
+<body>
+  <button id="btn1">버튼1</button>
+</body>
+</html>

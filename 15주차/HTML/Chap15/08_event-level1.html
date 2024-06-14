@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Level1 이벤트 지정 방식</title>
+  <style>
+    div#box {
+      width: 100px;
+      height: 100px;
+      background-color: #FC9;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      let box = document.querySelector("#box");
+      let txt = document.querySelector("#txt");
+      let btn = document.querySelector("#btn");
+
+      function over() {
+        txt.innerHTML = "마우스를 올렸습니다."
+      }
+      box.addEventListener('mouseover', over);
+
+      function out() {
+        txt.innerHTML = "마우스를 내렸습니다."
+      }
+      box.addEventListener('mouseout', out);
+
+      function clk() {
+        txt.innerHTML = "마우스를 클릭했습니다."
+      }
+      box.addEventListener('click', clk);
+
+      function del_clk() {
+        box.removeEventListener('click', clk)
+      }
+      box.addEventListener('click', del_clk);
+    }
+  </script>
+</head>
+<body>
+  <div id="box"></div>
+  <div id="txt"></div>
+  <input type="button" id="btn" value="클릭 이벤트 제거">
+</body>
+</html>
