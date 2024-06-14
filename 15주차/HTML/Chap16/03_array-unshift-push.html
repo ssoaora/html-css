@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배열 요소의 삽입/삭제</title>
+  <script>
+    let nums = [30, 40, 50];
+
+    document.write("원래 배열 : ", nums, "<br><br>");
+
+    nums.unshift(10, 20); // 배열의 앞부분에 10, 20을 추가
+    document.write("unshift(10, 20) : ", nums, "<br>");
+
+    nums.push(60, 70);  // 배열의 마지막에 60, 70을 추가
+    document.write("push(60, 70) : ", nums, "<br><br>");
+
+    let first = nums.shift(); // 배열의 첫 번째 요소를 제거하고 제거된 문자열을 반환
+    document.write("shift() : ", first, "<br>");
+
+    let last = nums.pop();  // 배열의 마지막 요소를 제거하고 제거된 문자열을 반환
+    document.write("pop() : ", last, "<br><br>");
+
+    document.write("현재 배열 : ", nums);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
